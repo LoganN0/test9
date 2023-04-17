@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Brief</title>
+</head>
+<body>
+
+    <main>
+
+        <form>
+
+            <h1>Formulaire de renseignement</h1>
+            
+            <hr>
+
+            <h2>Veuillez renseigner les informations demandées ci-dessous :</h2>
+
+            <!-- champs de renseignements -->
+
+            <label for="lastname">Nom :</label>
+            <input type="text" name="lastname" id="lastname" required><br>
+
+            <label for="firstname">Prénom :</label>
+            <input type="text" name="firstname" id="firstname" required><br>
+
+            <label for="age">Âge :</label>
+            <input type="number" name="age" id="age" required><br>
+
+            <label for="genre">Sexe :</label>
+            <select id="genre">
+                
+                <option value="select" selected>--- Sélectionnez un genre ---</option>
+                <option value="homme">Homme</option>
+                <option value="femme">Femme</option>
+                <option value="other">Autre</option>
+
+            </select><br>
+
+            <label for="email">E-mail :</label>
+            <input type="email" name="email" id="email" required><br>
+
+            <label for="adress">Adresse postale :</label>
+            <input type="text" name="adress" id="adress" required><br>
+
+            <label for="cp">Code postal :</label>
+            <input type="number" name="cp" id="cp" max="99999" required><br>
+
+            <label for="city">Ville :</label>
+            <input type="text" name="city" id="city" required><br>
+
+            <!-- menu déroulant avec plusieurs choix -->
+
+            <label for="job">Profession :</label>
+            <select name="job" id="job">
+
+                <option value="select" selected> --- Sélectionnez un métier --- </option>
+                <option value="none">Aucun</option>
+                <option value="developer">Développeur</option>
+                <option value="cableur">Cableur</option>
+                <option value="professor">Professeur</option>
+                <option value="directeur_commercial">Directeur commercial</option>
+                <option value="millitaire">Millitaire</option>
+                <option value="moniteur_autoecole">Moniteur Auto-Moto Ecole</option>
+                <option value="jardinier">Jardinier</option>
+                <option value="routier">Routier</option>
+
+            </select><br>
+
+            <label for="nationalite">Nationalité :</label>
+            <select name="nationalite" id="nationalite">
+
+                <option value="france" selected>Français</option>
+                <option value="anglais">English</option>
+                <option value="allemand">Deutsch</option>
+                <option value="espagne">Espagnol</option>
+                <option value="japon">Nihon</option>
+                <option value="italie">Italiano</option>
+
+            </select><br>
+
+            <label for="born">Date de naissance :</label>
+            <input type="date" name="born" id="born" required><br>
+
+            <label for="borncountry">Pays de naissance :</label>
+            <select name="borncountry" id="borncountry">
+
+                <option value="france" selected>France</option>
+                <option value="anglais">English</option>
+                <option value="allemand">Deutschland</option>
+                <option value="espagne">Espana</option>
+                <option value="japon">Nihon</option>
+                <option value="italie">Italia</option>
+
+            </select><br>
+
+            <label for="ss_number">Numéro de sécurité sociale :</label>
+            <input type="number" name="ss_number" id="ss_number" max="9999999999999" required><br>
+
+            <label for="passport">Numéro de passport :</label>
+            <input type="text" name="passport" id="passport" maxlength="9" required><br>
+
+            <label for="deliverypassport">Date de délivrance du passport :</label>
+            <input type="date" name="deliverypassport" id="deliverypassport" required><br>
+
+            <label for="validitypassport">Date de validité du passport :</label>
+            <input type="date" name="validitypassport" id="validitypassport" required><br>
+
+            <hr>
+
+            <input type="submit" value="Envoyer les informations">
+
+            <h3>Fin du formulaire, merci à vous !</h3>
+
+        </form>
+    
+    </main>
+    
+</body>
+</html>
